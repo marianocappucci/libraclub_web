@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda — Documentación LibraClub</title>
+  <meta name="description" content="La grilla semanal: qué cancha está libre, a qué hora y por cuánto.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraClub</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/sucursales.html">Sucursales</a>
+    <a href="/docs/canchas.html">Canchas</a>
+    <a href="/docs/tarifas.html">Tarifas</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/agenda.html" class="active">Agenda</a>
+    <a href="/docs/reservas.html">Reservas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
+    <a href="/docs/bloqueos.html">Bloqueos</a>
+    <a href="/docs/clientes.html">Clientes</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Agenda</h1>
+<p class="docs-lead">La pantalla del día a día: qué cancha está libre, a qué hora y por cuánto.</p>
+<h2>La grilla</h2>
+<p>La agenda muestra la <strong>semana</strong> de la sucursal activa, con una columna por cancha y una fila por turno. Los turnos se arman con la <strong>duración que tiene cada cancha</strong>: una cancha de pádel de 90 minutos y una de fútbol de 60 conviven sin problema.</p>
+<table class="docs-table">
+<thead><tr><th>Cómo se ve</th><th>Qué significa</th></tr></thead>
+<tbody>
+<tr><td>Turno <strong>libre con precio</strong></td><td>Se puede reservar. El precio es el que resolvió el <a href="/docs/tarifas.html">tarifario</a> para ese día y esa franja</td></tr>
+<tr><td>Turno <strong>libre sin precio</strong></td><td>Ninguna tarifa cubre ese horario. Se puede reservar cargando el importe a mano</td></tr>
+<tr><td>Turno <strong>ocupado</strong></td><td>Hay una reserva o un <a href="/docs/bloqueos.html">bloqueo</a>. Se toca para ver el detalle</td></tr>
+</tbody>
+</table>
+<div class="callout">
+<p><strong>El precio en la grilla es informativo y sale del tarifario.</strong> Si ves $9.000 a la mañana, $14.000 a la noche y $18.000 el sábado a la noche, eso es el tarifario resolviendo por franja y por día: nadie carga ese número tres veces.</p>
+</div>
+<h2>Tomar una reserva</h2>
+<p>Tocá un turno libre. Se abre el diálogo de alta — ver <a href="/docs/reservas.html">Reservas</a>.</p>
+<h2>Ver una reserva existente</h2>
+<p>Tocá un turno ocupado. Se abre el detalle con el cliente, el precio, el estado y <strong>las acciones que ese estado permite</strong>: un turno confirmado se puede cancelar o marcar ausente; uno ya cancelado, no.</p>
+<h2>Cambiar de sucursal</h2>
+<p>El selector de sucursal está en el menú de tu usuario. La agenda se recarga entera con las canchas de la sucursal elegida.</p>
+<div class="docs-nav-footer">
+<a href="/docs/tarifas.html">← Tarifas</a>
+<a href="/docs/reservas.html">Reservas →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraClub · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

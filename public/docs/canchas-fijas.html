@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canchas fijas — Documentación LibraClub</title>
+  <meta name="description" content="Reservas semanales recurrentes, y qué pasa si una fecha está ocupada.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraClub</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/sucursales.html">Sucursales</a>
+    <a href="/docs/canchas.html">Canchas</a>
+    <a href="/docs/tarifas.html">Tarifas</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/agenda.html">Agenda</a>
+    <a href="/docs/reservas.html">Reservas</a>
+    <a href="/docs/canchas-fijas.html" class="active">Canchas fijas</a>
+    <a href="/docs/bloqueos.html">Bloqueos</a>
+    <a href="/docs/clientes.html">Clientes</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Canchas fijas</h1>
+<p class="docs-lead">El grupo que juega todos los martes a las 21: se carga una vez y queda.</p>
+<h2>Qué es una serie</h2>
+<p>Una <strong>cancha fija</strong> es una reserva que se repite <strong>todas las semanas, el mismo día y a la misma hora, sin fecha de fin</strong>. Es el caso más común de un complejo: los mismos cuatro jugadores, la misma cancha, el mismo horario, todas las semanas.</p>
+<h2>Qué pasa si una fecha está ocupada</h2>
+<div class="callout">
+<p><strong>La ocurrencia que choca se saltea, y el resto se crea igual.</strong> Si la cancha fija de los martes cae en una fecha donde ya había un torneo, esa semana no se crea y las demás sí. Abortar toda la serie por una fecha ocupada obligaría a cargar todo de nuevo por un choque de una semana.</p>
+</div>
+<p>Las reservas creadas por una serie quedan marcadas con origen <kbd>serie</kbd>, así que en cualquier listado se puede ver cuáles vinieron de una cancha fija y cuáles se tomaron una por una.</p>
+<h2>Cancelar una fecha suelta</h2>
+<p>Cada ocurrencia es una reserva normal: se cancela una sin tocar las demás, con su motivo, como cualquier otra. Ver <a href="/docs/reservas.html">Reservas</a>.</p>
+<div class="callout warn">
+<p><strong>Las reglas de la cancha fija son un supuesto de producto, no un relevamiento.</strong> Que sea semanal y sin fin es lo que vimos que hacen los complejos; si en el tuyo funciona distinto —quincenal, por temporada, con fecha de corte— decínoslo: es exactamente la clase de cosa que queremos ajustar con complejos reales.</p>
+</div>
+<div class="docs-nav-footer">
+<a href="/docs/reservas.html">← Reservas</a>
+<a href="/docs/bloqueos.html">Bloqueos →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraClub · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

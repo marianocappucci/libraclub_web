@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarifas — Documentación LibraClub</title>
+  <meta name="description" content="El tarifario por cancha, día y franja, y cuál gana cuando hay varias.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraClub</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/sucursales.html">Sucursales</a>
+    <a href="/docs/canchas.html">Canchas</a>
+    <a href="/docs/tarifas.html" class="active">Tarifas</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/agenda.html">Agenda</a>
+    <a href="/docs/reservas.html">Reservas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
+    <a href="/docs/bloqueos.html">Bloqueos</a>
+    <a href="/docs/clientes.html">Clientes</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Tarifas</h1>
+<p class="docs-lead">Cuánto sale la cancha, según el día y la franja horaria.</p>
+<h2>Qué es una tarifa</h2>
+<p>Una tarifa dice: <em>en esta sucursal (y opcionalmente en esta cancha), estos días, entre estas dos horas, el turno sale tanto</em>.</p>
+<table class="docs-table">
+<thead><tr><th>Campo</th><th>Detalle</th></tr></thead>
+<tbody>
+<tr><td><strong>Nombre</strong></td><td>Cómo la llamás: "Nocturna", "Fin de semana", "Promo mañana"</td></tr>
+<tr><td><strong>Sucursal</strong></td><td>Obligatoria</td></tr>
+<tr><td><strong>Cancha</strong></td><td>Opcional. Vacía = aplica a <strong>todas</strong> las canchas de la sucursal</td></tr>
+<tr><td><strong>Alcance del día</strong></td><td>Todos los días · Un día de la semana · Feriados</td></tr>
+<tr><td><strong>Franja</strong></td><td>Desde y hasta. Incluye el "desde" y no el "hasta", así dos franjas seguidas no se pelean el minuto del borde</td></tr>
+<tr><td><strong>Precio</strong></td><td>Del <strong>turno completo</strong>, no por hora: es lo que contestás cuando preguntan "¿cuánto sale la cancha?"</td></tr>
+<tr><td><strong>Seña</strong></td><td>Porcentaje del precio, de 0 a 100. Con 0 no se pide seña en esa franja</td></tr>
+<tr><td><strong>Vigencia</strong></td><td>Desde y hasta, opcionales. Sirve para cargar el aumento con anticipación</td></tr>
+<tr><td><strong>Prioridad</strong></td><td>Ver abajo. Por defecto 0</td></tr>
+</tbody>
+</table>
+<h2>Cuál gana cuando hay varias</h2>
+<p>Para un turno pueden aplicar varias tarifas a la vez. Se elige así, y <strong>la primera regla que las diferencia decide</strong>:</p>
+<ol class="step-list">
+<li><strong>Prioridad</strong> más alta.</li>
+<li><strong>Alcance del día</strong>: feriado le gana a día de la semana, y día de la semana le gana a "todos los días".</li>
+<li><strong>Cancha</strong>: una tarifa de una cancha le gana a una de toda la sucursal.</li>
+<li>La <strong>más nueva</strong>.</li>
+</ol>
+<div class="callout">
+<p><strong>Por qué la prioridad va primera y no última.</strong> Es el escape manual: permite que una promoción de toda la sucursal le gane a la tarifa específica de una cancha sin tener que borrarla —y después acordarse de volver a cargarla—. Si fuera sólo un desempate, no podría hacer eso. Mientras la dejes en 0, quien decide es la especificidad.</p>
+</div>
+<h2>Cambiar el alcance</h2>
+<p>Al pasar una tarifa a <strong>feriados</strong> o a <strong>todos los días</strong>, el día de la semana se limpia solo; al pasarla a <strong>día de la semana</strong>, el campo aparece y hay que completarlo. Una tarifa de feriado con un martes cargado es un estado que no significa nada, y el sistema no lo permite guardar.</p>
+<h2>Un turno que cruza dos franjas</h2>
+<div class="callout warn">
+<p><strong>No se prorratea.</strong> Un turno de 90 minutos que arranca a las 17:30 y se mete en la franja nocturna de las 18:00 <strong>se cobra entero con la tarifa de las 17:30</strong>, la de la hora en que empieza. Prorratear suena más justo y es exactamente la clase de cuenta que nadie quiere explicar en el mostrador.</p>
+</div>
+<h2>Feriados</h2>
+<p>El alcance <strong>feriados</strong> se apoya en el calendario de feriados de cada sucursal, donde además se marca si el complejo <strong>cierra</strong> ese día. Ese calendario todavía no tiene pantalla propia: si necesitás cargarlo, pedilo a soporte.</p>
+<h2>Quién puede</h2>
+<p>Ver, cualquier usuario. <strong>Alta, edición y baja: sólo administrador</strong> — acá se define plata.</p>
+<div class="docs-nav-footer">
+<a href="/docs/canchas.html">← Canchas</a>
+<a href="/docs/agenda.html">Agenda →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraClub · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

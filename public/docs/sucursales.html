@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sucursales — Documentación LibraClub</title>
+  <meta name="description" content="Las sedes del complejo y su punto de venta.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraClub</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/sucursales.html" class="active">Sucursales</a>
+    <a href="/docs/canchas.html">Canchas</a>
+    <a href="/docs/tarifas.html">Tarifas</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/agenda.html">Agenda</a>
+    <a href="/docs/reservas.html">Reservas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
+    <a href="/docs/bloqueos.html">Bloqueos</a>
+    <a href="/docs/clientes.html">Clientes</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Sucursales</h1>
+<p class="docs-lead">Las sedes de tu complejo. Todo —canchas, tarifas, feriados y reservas— cuelga de una.</p>
+<h2>Dar de alta una sucursal</h2>
+<ol class="step-list">
+<li>Andá a <strong>Administración → Sucursales</strong>.</li>
+<li><strong>Nueva sucursal</strong>: nombre, dirección, localidad, teléfono y correo.</li>
+<li>Si vas a facturar desde esta sede, cargá su <strong>punto de venta de ARCA</strong>.</li>
+<li>Guardá.</li>
+</ol>
+<div class="callout warn">
+<p><strong>Dos sucursales no pueden compartir el punto de venta.</strong> La numeración de comprobantes va por tipo y punto de venta: con el mismo número en dos sedes, las dos numerarían encima de la otra. El sistema lo rechaza al guardar y te dice por qué.</p>
+</div>
+<p>Si una sucursal todavía no factura, dejá el punto de venta vacío. Eso sí se puede repetir: lo que no se puede es repetir un número real.</p>
+<h2>Cambiar de sucursal</h2>
+<p>Si tenés más de una, el <strong>selector de sucursal</strong> está en el menú de tu usuario, arriba a la izquierda. La sucursal activa se ve siempre debajo de <em>LibraClub</em> en la barra lateral, incluso cuando hay una sola.</p>
+<h2>Dar de baja y reactivar</h2>
+<table class="docs-table">
+<thead><tr><th>Qué pasa al dar de baja</th><th>Detalle</th></tr></thead>
+<tbody>
+<tr><td>Desaparece del selector</td><td>Ya no se puede operar sobre ella</td></tr>
+<tr><td><strong>Sigue en esta pantalla</strong></td><td>Marcada como dada de baja, y se puede reactivar</td></tr>
+<tr><td>El selector se corre solo</td><td>Si diste de baja la que estabas mirando, pasa a otra activa</td></tr>
+<tr><td>Sus datos quedan</td><td>Las reservas viejas siguen sabiendo dónde fueron</td></tr>
+</tbody>
+</table>
+<h2>Una sucursal no es una empresa aparte</h2>
+<div class="callout">
+<p>Las sucursales de una misma instancia <strong>comparten los clientes y los usuarios</strong>: sirven para separar canchas, tarifas y agenda, no para aislar datos. Si necesitás aislamiento real —o facturar con otro CUIT— eso va en <strong>otra instancia</strong>. Consultanos.</p>
+</div>
+<h2>Quién puede</h2>
+<p>El listado lo ve cualquier usuario; <strong>el alta, la edición y la baja son de administrador</strong>. La pantalla esconde los botones que tu rol no puede usar, y el servidor los rechaza igual si se llega por otro lado.</p>
+<div class="docs-nav-footer">
+<a href="/docs/primeros-pasos.html">← Primeros pasos</a>
+<a href="/docs/canchas.html">Canchas →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraClub · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

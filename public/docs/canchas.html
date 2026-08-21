@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canchas — Documentación LibraClub</title>
+  <meta name="description" content="Deporte, duración del turno, techada, iluminación y superficie.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraClub</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/sucursales.html">Sucursales</a>
+    <a href="/docs/canchas.html" class="active">Canchas</a>
+    <a href="/docs/tarifas.html">Tarifas</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/agenda.html">Agenda</a>
+    <a href="/docs/reservas.html">Reservas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
+    <a href="/docs/bloqueos.html">Bloqueos</a>
+    <a href="/docs/clientes.html">Clientes</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Canchas</h1>
+<p class="docs-lead">Lo que alquilás. Cada cancha define su deporte y la duración de su turno, y con eso se arma la grilla de la agenda.</p>
+<h2>Los campos</h2>
+<table class="docs-table">
+<thead><tr><th>Campo</th><th>Para qué sirve</th></tr></thead>
+<tbody>
+<tr><td><strong>Nombre</strong></td><td>Cómo la llaman en el mostrador: "Cancha 1", "Central", "Techada"</td></tr>
+<tr><td><strong>Sucursal</strong></td><td>Dónde está</td></tr>
+<tr><td><strong>Deporte</strong></td><td>Pádel, fútbol, tenis, básquet, vóley, hockey u otro</td></tr>
+<tr><td><strong>Duración del turno</strong></td><td>En minutos. <strong>Define la grilla</strong>: con 90 la agenda muestra turnos de hora y media</td></tr>
+<tr><td><strong>Techada</strong></td><td>Se ve en la agenda. Es lo que se pregunta cuando llueve</td></tr>
+<tr><td><strong>Iluminación</strong></td><td>Si se puede jugar de noche</td></tr>
+<tr><td><strong>Superficie</strong></td><td>Texto libre: césped sintético, cemento, polvo de ladrillo…</td></tr>
+<tr><td><strong>Orden</strong></td><td>En qué posición sale en la agenda</td></tr>
+</tbody>
+</table>
+<h2>Editar una cancha</h2>
+<div class="callout">
+<p><strong>La edición guarda la ficha entera</strong>, no sólo lo que tocaste. Es la pantalla la que se ocupa de traer los valores actuales y mandarlos completos: si cambiás sólo el nombre, la cancha sigue siendo techada, con su misma duración y su misma superficie.</p>
+</div>
+<h2>Dar de baja</h2>
+<p>Una cancha se puede <strong>dar de baja</strong>: deja de aparecer en la agenda y no se le pueden tomar reservas nuevas, pero las viejas siguen existiendo. Se puede reactivar cuando quieras.</p>
+<div class="callout warn">
+<p><strong>Borrar una cancha con reservas no se puede.</strong> El sistema lo rechaza y te ofrece darla de baja, que es lo que casi siempre se quiere decir. Borrar de verdad sólo funciona con una cancha que nunca se usó — y en ese caso se lleva también sus tarifas, porque una tarifa de una cancha que no existe no aplica a nada.</p>
+</div>
+<h2>Quién puede</h2>
+<p>Ver, cualquier usuario. <strong>Alta, edición y baja: sólo administrador.</strong></p>
+<div class="docs-nav-footer">
+<a href="/docs/sucursales.html">← Sucursales</a>
+<a href="/docs/tarifas.html">Tarifas →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraClub · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>

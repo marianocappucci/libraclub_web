@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios — Documentación LibraClub</title>
+  <meta name="description" content="Roles, altas, bajas y contraseñas.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraClub</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/sucursales.html">Sucursales</a>
+    <a href="/docs/canchas.html">Canchas</a>
+    <a href="/docs/tarifas.html">Tarifas</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/agenda.html">Agenda</a>
+    <a href="/docs/reservas.html">Reservas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
+    <a href="/docs/bloqueos.html">Bloqueos</a>
+    <a href="/docs/clientes.html">Clientes</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html" class="active">Usuarios</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Usuarios</h1>
+<p class="docs-lead">Quién entra al sistema y qué puede hacer.</p>
+<h2>Los roles</h2>
+<table class="docs-table">
+<thead><tr><th>Rol</th><th>Qué puede hacer</th></tr></thead>
+<tbody>
+<tr><td><kbd>admin</kbd></td><td>Todo: además, sucursales, canchas, tarifas y la administración de usuarios</td></tr>
+<tr><td><kbd>staff</kbd></td><td>La operación completa: agenda, reservas, bloqueos, canchas fijas y clientes</td></tr>
+</tbody>
+</table>
+<div class="callout">
+<p><strong>Un encargado tiene todo lo que necesita para atender el mostrador</strong> sin poder tocar precios ni configuración. Es el reparto que tiene sentido en un complejo: quien atiende toma reservas y carga clientes todo el día; quien decide cuánto sale la cancha es otra persona.</p>
+</div>
+<h2>Dar de alta un usuario</h2>
+<ol class="step-list">
+<li>Andá a <strong>Administración → Usuarios</strong> (sólo administradores).</li>
+<li><strong>Nuevo usuario</strong>: nombre, usuario y rol.</li>
+<li>Asignale una contraseña inicial.</li>
+<li>Guardá. Ya puede entrar.</li>
+</ol>
+<h2>Dar de baja</h2>
+<p>Lo recomendable es <strong>desactivar</strong> en vez de eliminar: un usuario desactivado no puede entrar más, y lo que hizo sigue teniendo nombre. Nadie puede desactivarse ni borrarse a sí mismo.</p>
+<h2>Cambiar la contraseña</h2>
+<p>Cada usuario cambia la suya desde su propio menú. Un administrador puede reasignar la de cualquiera, por ejemplo cuando alguien la olvida.</p>
+<div class="callout warn">
+<p><strong>El menú esconde lo que tu rol no puede usar, pero quien decide es el servidor.</strong> No es la pantalla la que protege: alguien que llegara igual a una operación de administración recibe un rechazo del sistema.</p>
+</div>
+<div class="docs-nav-footer">
+<a href="/docs/clientes.html">← Clientes</a>
+<span></span>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraClub · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>
