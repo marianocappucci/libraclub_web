@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canchas fijas — Documentación LibraClub</title>
-  <meta name="description" content="Reservas semanales recurrentes, y qué pasa si una fecha está ocupada.">
+  <title>Log de actividad — Documentación LibraClub</title>
+  <meta name="description" content="Quién hizo qué y quién entró, en dos pestañas.">
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,34 +34,34 @@
     <div class="docs-sidebar-section">Día a día</div>
     <a href="/docs/agenda.html">Agenda</a>
     <a href="/docs/reservas.html">Reservas</a>
-    <a href="/docs/canchas-fijas.html" class="active">Canchas fijas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
     <a href="/docs/bloqueos.html">Bloqueos</a>
     <a href="/docs/clientes.html">Clientes</a>
     <div class="docs-sidebar-section">Cuenta</div>
     <a href="/docs/usuarios.html">Usuarios</a>
     <a href="/docs/configuracion.html">Configuración</a>
-    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/logs.html" class="active">Log de actividad</a>
     <a href="/docs/backup.html">Backup y restauración</a>
   </nav>
 
   <main class="docs-content">
-    <h1>Canchas fijas</h1>
-<p class="docs-lead">El grupo que juega todos los martes a las 21: se carga una vez y queda.</p>
-<h2>Qué es una serie</h2>
-<p>Una <strong>cancha fija</strong> es una reserva que se repite <strong>todas las semanas, el mismo día y a la misma hora, sin fecha de fin</strong>. Es el caso más común de un complejo: los mismos cuatro jugadores, la misma cancha, el mismo horario, todas las semanas.</p>
-<h2>Qué pasa si una fecha está ocupada</h2>
+    <h1>Log de actividad</h1>
+<p class="docs-lead">Quién hizo qué y quién entró. Dos pestañas, sólo para administradores.</p>
+<h2>Actividad</h2>
+<p>Cada alta, edición y baja del sistema deja un asiento con el <strong>usuario</strong>, la <strong>fecha y hora</strong>, la <strong>entidad</strong> tocada y la <strong>acción</strong>. Contesta la pregunta que ninguna pantalla contesta: <em>"¿quién le cambió el precio a esta tarifa?"</em> o <em>"¿quién canceló la reserva del sábado?"</em>.</p>
+<p>Se filtra por entidad, usuario, acción y rango de fechas.</p>
+<h2>Accesos</h2>
+<p>Los ingresos al sistema: quién entró, cuándo, y también <strong>los intentos fallidos</strong>.</p>
 <div class="callout">
-<p><strong>La ocurrencia que choca se saltea, y el resto se crea igual.</strong> Si la cancha fija de los martes cae en una fecha donde ya había un torneo, esa semana no se crea y las demás sí. Abortar toda la serie por una fecha ocupada obligaría a cargar todo de nuevo por un choque de una semana.</p>
+<p><strong>Esta pestaña es además lo que hace posible el corte por intentos fallidos.</strong> El registro de accesos y el bloqueo del login son la misma pieza: a partir del sexto intento fallido seguido, el login rechaza por un rato. Si el registro de accesos estuviera apagado, el corte tampoco funcionaría — y nadie lo notaría hasta que alguien probara contraseñas de a miles.</p>
 </div>
-<p>Las reservas creadas por una serie quedan marcadas con origen <kbd>serie</kbd>, así que en cualquier listado se puede ver cuáles vinieron de una cancha fija y cuáles se tomaron una por una.</p>
-<h2>Cancelar una fecha suelta</h2>
-<p>Cada ocurrencia es una reserva normal: se cancela una sin tocar las demás, con su motivo, como cualquier otra. Ver <a href="/docs/reservas.html">Reservas</a>.</p>
+<h2>El log no se edita</h2>
 <div class="callout warn">
-<p><strong>Las reglas de la cancha fija son un supuesto de producto, no un relevamiento.</strong> Que sea semanal y sin fin es lo que vimos que hacen los complejos; si en el tuyo funciona distinto —quincenal, por temporada, con fecha de corte— decínoslo: es exactamente la clase de cosa que queremos ajustar con complejos reales.</p>
+<p><strong>No hay forma de borrar ni corregir un asiento</strong>, ni siquiera siendo administrador, y tampoco de cargar uno a mano. Un log que se puede corregir no sirve para lo que existe: los asientos los escribe el sistema, en la misma operación que el cambio que registran.</p>
 </div>
 <div class="docs-nav-footer">
-<a href="/docs/reservas.html">← Reservas</a>
-<a href="/docs/bloqueos.html">Bloqueos →</a>
+<a href="/docs/configuracion.html">← Configuración</a>
+<a href="/docs/backup.html">Backup y restauración →</a>
 </div>
   </main>
 </div>

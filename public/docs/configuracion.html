@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Canchas fijas — Documentación LibraClub</title>
-  <meta name="description" content="Reservas semanales recurrentes, y qué pasa si una fecha está ocupada.">
+  <title>Configuración — Documentación LibraClub</title>
+  <meta name="description" content="Datos del complejo, logo, correo saliente y backup.">
   <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,34 +34,37 @@
     <div class="docs-sidebar-section">Día a día</div>
     <a href="/docs/agenda.html">Agenda</a>
     <a href="/docs/reservas.html">Reservas</a>
-    <a href="/docs/canchas-fijas.html" class="active">Canchas fijas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
     <a href="/docs/bloqueos.html">Bloqueos</a>
     <a href="/docs/clientes.html">Clientes</a>
     <div class="docs-sidebar-section">Cuenta</div>
     <a href="/docs/usuarios.html">Usuarios</a>
-    <a href="/docs/configuracion.html">Configuración</a>
+    <a href="/docs/configuracion.html" class="active">Configuración</a>
     <a href="/docs/logs.html">Log de actividad</a>
     <a href="/docs/backup.html">Backup y restauración</a>
   </nav>
 
   <main class="docs-content">
-    <h1>Canchas fijas</h1>
-<p class="docs-lead">El grupo que juega todos los martes a las 21: se carga una vez y queda.</p>
-<h2>Qué es una serie</h2>
-<p>Una <strong>cancha fija</strong> es una reserva que se repite <strong>todas las semanas, el mismo día y a la misma hora, sin fecha de fin</strong>. Es el caso más común de un complejo: los mismos cuatro jugadores, la misma cancha, el mismo horario, todas las semanas.</p>
-<h2>Qué pasa si una fecha está ocupada</h2>
+    <h1>Configuración</h1>
+<p class="docs-lead">Los datos de tu complejo, el correo saliente y el backup de tu base. Sólo para administradores.</p>
+<h2>Empresa</h2>
+<p>Razón social, CUIT, domicilio, condición de IVA y el <strong>logo</strong> del complejo. Es la identidad de tu instancia: el nombre que se ve en el sistema y el que va a salir en los papeles.</p>
 <div class="callout">
-<p><strong>La ocurrencia que choca se saltea, y el resto se crea igual.</strong> Si la cancha fija de los martes cae en una fecha donde ya había un torneo, esa semana no se crea y las demás sí. Abortar toda la serie por una fecha ocupada obligaría a cargar todo de nuevo por un choque de una semana.</p>
+<p><strong>Se guarda en tu base de datos, no en el servidor.</strong> Cambiar el teléfono no requiere que nadie redespliegue nada, y todo esto <strong>viaja en el backup</strong>.</p>
 </div>
-<p>Las reservas creadas por una serie quedan marcadas con origen <kbd>serie</kbd>, así que en cualquier listado se puede ver cuáles vinieron de una cancha fija y cuáles se tomaron una por una.</p>
-<h2>Cancelar una fecha suelta</h2>
-<p>Cada ocurrencia es una reserva normal: se cancela una sin tocar las demás, con su motivo, como cualquier otra. Ver <a href="/docs/reservas.html">Reservas</a>.</p>
+<h2>Correo</h2>
+<p>La configuración del servidor de correo saliente (SMTP) de tu complejo. La contraseña se guarda <strong>cifrada</strong>.</p>
+<h2>Datos / Backup</h2>
+<p>Ver <a href="/docs/backup.html">Backup y restauración</a>.</p>
+<h2>Lo que todavía no está acá</h2>
 <div class="callout warn">
-<p><strong>Las reglas de la cancha fija son un supuesto de producto, no un relevamiento.</strong> Que sea semanal y sin fin es lo que vimos que hacen los complejos; si en el tuyo funciona distinto —quincenal, por temporada, con fecha de corte— decínoslo: es exactamente la clase de cosa que queremos ajustar con complejos reales.</p>
+<p><strong>No hay pestaña de ARCA, y no es un olvido:</strong> LibraClub todavía no factura. La pestaña aparece el día que haya facturación del otro lado — ponerla antes sería pedirte un certificado que nadie va a usar.</p>
 </div>
+<h2>Quién puede</h2>
+<p>Configuración es <strong>sólo de administrador</strong>, entera. Un encargado no ve la entrada en el menú.</p>
 <div class="docs-nav-footer">
-<a href="/docs/reservas.html">← Reservas</a>
-<a href="/docs/bloqueos.html">Bloqueos →</a>
+<a href="/docs/usuarios.html">← Usuarios</a>
+<a href="/docs/logs.html">Log de actividad →</a>
 </div>
   </main>
 </div>
