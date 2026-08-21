@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuenta corriente — Documentación LibraClub</title>
+  <meta name="description" content="Fiar una reserva, cobrar a cuenta y ver quién debe.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraClub</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/sucursales.html">Sucursales</a>
+    <a href="/docs/canchas.html">Canchas</a>
+    <a href="/docs/tarifas.html">Tarifas</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/agenda.html">Agenda</a>
+    <a href="/docs/reservas.html">Reservas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
+    <a href="/docs/bloqueos.html">Bloqueos</a>
+    <a href="/docs/clientes.html">Clientes</a>
+    <a href="/docs/caja.html">Caja</a>
+    <a href="/docs/cuenta-corriente.html" class="active">Cuenta corriente</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/configuracion.html">Configuración</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Cuenta corriente</h1>
+<p class="docs-lead">Fiar una reserva, cobrar a cuenta y ver quién te debe. Para el grupo que juega y paga a fin de mes.</p>
+<h2>Fiar una reserva</h2>
+<ol class="step-list">
+<li>En la <a href="/docs/agenda.html">agenda</a>, abrí el turno ya reservado.</li>
+<li>Tocá <strong>Cargar a la cuenta</strong>.</li>
+</ol>
+<p>La cancha se juega igual y la deuda queda registrada a nombre del cliente. No hay nada más que completar: el importe es el de la reserva.</p>
+<div class="callout">
+<p><strong>Cargar dos veces la misma reserva no fía dos veces.</strong> Un doble clic en el botón deja una sola deuda — el sistema reconoce que es la misma reserva.</p>
+</div>
+<div class="callout warn">
+<p><strong>Un <a href="/docs/bloqueos.html">bloqueo</a> no se puede fiar.</strong> No tiene cliente a quien cobrarle después, así que el sistema lo rechaza en vez de dejar una deuda sin dueño. Lo mismo con una reserva sin precio.</p>
+</div>
+<h2>Cobrar a cuenta</h2>
+<ol class="step-list">
+<li>Andá a <strong>Cuenta corriente</strong>.</li>
+<li>Elegí el cliente en la lista de deudores.</li>
+<li>Cargá el <strong>importe</strong> y el <strong>medio de pago</strong>, y confirmá.</li>
+</ol>
+<div class="callout warn">
+<p><strong>Hace falta tener la <a href="/docs/caja.html">caja abierta</a>.</strong> Si no hay turno abierto el pago se rechaza <strong>y el saldo no se toca</strong>. Es a propósito: el pago entra a la caja del turno, y bajarle la deuda a alguien por plata que ninguna caja registró es la diferencia que después nadie puede explicar.</p>
+</div>
+<p><strong>Dos pagos son dos pagos.</strong> Si el mismo cliente paga dos veces el mismo día, los dos entran — a diferencia del débito, acá no hay nada que unificar.</p>
+<h2>Pagar de más deja saldo a favor</h2>
+<p>No es un error: una seña o un adelanto es un caso normal. El saldo queda a favor del cliente y se descuenta de lo que fíe después.</p>
+<h2>La pantalla</h2>
+<p>Una sola, con la <strong>lista de deudores</strong> a la izquierda y el <strong>extracto</strong> del elegido a la derecha — porque el uso real es <em>"¿quién me debe?"</em> seguido de <em>"mostrame lo de éste"</em>.</p>
+<p>El extracto separa <strong>Debe</strong> y <strong>Haber</strong> en columnas: lo que se fió de un lado, los pagos del otro.</p>
+<h2>Quién puede</h2>
+<div class="callout">
+<p><strong>Cuenta corriente es de mostrador, no de administración.</strong> El encargado es el que fía y el que cobra: sin ver el saldo no puede atender al que viene a pagar. Por eso está en el menú junto a Caja y no entre los maestros.</p>
+</div>
+<div class="docs-nav-footer">
+<a href="/docs/caja.html">← Caja</a>
+<a href="/docs/usuarios.html">Usuarios →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraClub · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>
