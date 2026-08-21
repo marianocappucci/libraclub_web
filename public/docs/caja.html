@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Caja — Documentación LibraClub</title>
+  <meta name="description" content="Abrir el turno, cobrar y cerrar con arqueo.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="/" class="navbar-brand" style="text-decoration:none"><div class="logo-icon">C</div>LibraClub</a>
+  <div class="navbar-links">
+    <a href="/#funciones">Funciones</a>
+    <a href="/#planes">Planes</a>
+    <a href="/docs/" style="color:var(--brand)">Documentación</a>
+  </div>
+</nav>
+
+<div class="docs-wrapper">
+  <nav class="docs-sidebar">
+    <div class="docs-sidebar-section">Inicio</div>
+    <a href="/docs/">Introducción</a>
+    <a href="/docs/primeros-pasos.html">Primeros pasos</a>
+    <div class="docs-sidebar-section">Configuración</div>
+    <a href="/docs/sucursales.html">Sucursales</a>
+    <a href="/docs/canchas.html">Canchas</a>
+    <a href="/docs/tarifas.html">Tarifas</a>
+    <div class="docs-sidebar-section">Día a día</div>
+    <a href="/docs/agenda.html">Agenda</a>
+    <a href="/docs/reservas.html">Reservas</a>
+    <a href="/docs/canchas-fijas.html">Canchas fijas</a>
+    <a href="/docs/bloqueos.html">Bloqueos</a>
+    <a href="/docs/clientes.html">Clientes</a>
+    <a href="/docs/caja.html" class="active">Caja</a>
+    <div class="docs-sidebar-section">Cuenta</div>
+    <a href="/docs/usuarios.html">Usuarios</a>
+    <a href="/docs/configuracion.html">Configuración</a>
+    <a href="/docs/logs.html">Log de actividad</a>
+    <a href="/docs/backup.html">Backup y restauración</a>
+  </nav>
+
+  <main class="docs-content">
+    <h1>Caja</h1>
+<p class="docs-lead">Abrir el turno al empezar, cobrar durante, y cerrar contando el efectivo.</p>
+<h2>Una sola pantalla</h2>
+<p>Abrir, cobrar y cerrar están en <strong>Caja</strong>, sin navegar a ningún lado: es lo único que se hace en un mostrador, y partirlo en tres pantallas obligaría a ir y volver todo el día.</p>
+<h2>Abrir el turno</h2>
+<ol class="step-list">
+<li>Andá a <strong>Caja</strong>.</li>
+<li>Cargá el <strong>monto inicial</strong>, lo que hay en el cajón al empezar.</li>
+<li>Abrí. A partir de ahí los cobros se van registrando en este turno.</li>
+</ol>
+<h2>Cobrar</h2>
+<p>Cada cobro lleva su <strong>medio de pago</strong>. Durante el turno la pantalla muestra el resumen de lo que entró, abierto por medio.</p>
+<div class="callout">
+<p><strong>Facturar y cobrar son dos acciones distintas, y es a propósito.</strong> La factura es el documento fiscal; el cobro es la plata que entra al cajón. Se puede facturar sin cobrar —a cuenta corriente— y cobrar sin facturar —una seña—. Un solo botón para las dos cosas obliga a elegir mal en los dos casos.</p>
+</div>
+<h2>Cerrar con arqueo</h2>
+<ol class="step-list">
+<li>Al terminar el turno, contá el efectivo del cajón.</li>
+<li>Cargá el <strong>monto declarado</strong>: lo que contaste.</li>
+<li>Cerrá.</li>
+</ol>
+<p>El cierre guarda las tres cifras juntas: lo <strong>esperado</strong> (lo que el sistema calculó), lo <strong>declarado</strong> (lo que contaste) y la <strong>diferencia</strong>. Queda registrado aunque no cuadre — un arqueo que sólo se puede guardar cuando da cero no sirve para encontrar nada.</p>
+<div class="callout">
+<p><strong>El monto esperado lo calcula el sistema y la pantalla sólo lo muestra.</strong> Si lo calcularan los dos por su cuenta, un redondeo distinto haría que mostraran números distintos — y ahí no hay forma de saber cuál mirar.</p>
+</div>
+<div class="docs-nav-footer">
+<a href="/docs/clientes.html">← Clientes</a>
+<a href="/docs/usuarios.html">Usuarios →</a>
+</div>
+  </main>
+</div>
+
+<footer style="background:var(--dark);color:#94a3b8;text-align:center;padding:1.5rem;font-size:.85rem;">
+  © 2026 LibraClub · <a href="/" style="color:#94a3b8">Inicio</a>
+</footer>
+</body>
+</html>
