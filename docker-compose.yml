@@ -7,7 +7,7 @@ services:
     environment:
       - AUTH_UPSTREAM=libraclub-web-auth
     ports:
-      - "8101:80"
+      - "127.0.0.1:8101:80"
     networks:
       - stack-net
     depends_on:
