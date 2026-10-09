@@ -22,6 +22,7 @@
   <div class="navbar-links">
     <a href="#funciones">Funciones</a>
     <a href="#planes">Planes</a>
+    <a href="#preguntas">Preguntas</a>
     <a href="/docs/">Documentación</a>
     <!-- demo-publica --><a href="https://demo.libraclub.com.ar/" target="_blank" rel="noopener">Ver la demo</a>
     <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraClub" target="_blank" class="btn-nav">Contactar</a>
@@ -42,6 +43,14 @@
     </a>
   </div>
 </section>
+
+<!-- ── Puntos fuertes ─────────────────────────────────────── -->
+<div class="highlights">
+  <div class="highlight"><i class="bi bi-shield-lock"></i><div><strong>Sin reservas pisadas</strong><span>La regla vive en la base</span></div></div>
+  <div class="highlight"><i class="bi bi-tags"></i><div><strong>Tarifas por franja</strong><span>Por día, hora y cancha</span></div></div>
+  <div class="highlight"><i class="bi bi-arrow-repeat"></i><div><strong>Canchas fijas</strong><span>Se cargan una sola vez</span></div></div>
+  <div class="highlight"><i class="bi bi-geo-alt"></i><div><strong>Multi-sucursal</strong><span>Cada sede con su agenda</span></div></div>
+</div>
 
 <!-- ── Funciones ──────────────────────────────────────────── -->
 <section id="funciones">
@@ -168,15 +177,69 @@
   </div>
 </section>
 
-<!-- ── Para quién ─────────────────────────────────────────── -->
+<!-- ── Capturas de la demo ────────────────────────────────── -->
+<section class="showcase">
+  <div class="container">
+    <div class="section-label">Así se ve</div>
+    <h2 class="section-title">Las canchas y las tarifas, ordenadas</h2>
+    <p class="section-sub">La agenda de una cancha y las tarifas por franja. Capturas reales de la demo, con datos de prueba.</p>
+    <div class="showcase-grid">
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.libraclub.com.ar/agenda</div>
+          </div>
+          <div class="browser-body">
+            <img src="/img/demo-agenda.jpg" width="2160" height="1350" loading="lazy"
+                 alt="Agenda semanal de LibraClub para una cancha de pádel: turnos de 90 minutos con su precio, reservas, canchas fijas y bloqueos por mantenimiento">
+          </div>
+        </div>
+        <figcaption>La agenda: cada cancha con sus reservas, fijos y bloqueos.</figcaption>
+      </figure>
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.libraclub.com.ar/tarifas</div>
+          </div>
+          <div class="browser-body">
+            <img src="/img/demo-tarifas.jpg" width="2160" height="1350" loading="lazy"
+                 alt="Tarifas de LibraClub: nombre, días, cancha, franja horaria, precio, porcentaje de seña y prioridad">
+          </div>
+        </div>
+        <figcaption>Las tarifas: por franja, día y cancha, con su seña.</figcaption>
+      </figure>
+    </div>
+    <div class="showcase-cta">
+      <!-- demo-publica --><a href="https://demo.libraclub.com.ar/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        <i class="bi bi-play-circle"></i> Probar la demo
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Rubros ─────────────────────────────────────────────── -->
 <section class="alt">
-  <div class="container" style="text-align:center">
+  <div class="container">
     <div class="section-label">Para quién es</div>
     <h2 class="section-title">Cualquier espacio que se alquile por hora</h2>
-    <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin-top:2rem">
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-dribbble" style="color:var(--brand);margin-right:.4rem"></i>Complejos de pádel</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-trophy" style="color:var(--brand);margin-right:.4rem"></i>Canchas de fútbol 5</span>
-      <span style="background:white;border:1px solid var(--border);border-radius:999px;padding:.5rem 1.2rem;font-weight:600;font-size:.9rem;color:var(--dark-2)"><i class="bi bi-circle" style="color:var(--brand);margin-right:.4rem"></i>Tenis, básquet, vóley y hockey</span>
+    <div class="rubros">
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-dribbble"></i></div>
+        <h3>Complejos de pádel</h3>
+        <p>Una agenda con una columna por cancha, tarifas por franja y el grupo de todos los martes cargado una sola vez.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-trophy"></i></div>
+        <h3>Canchas de fútbol 5</h3>
+        <p>Reservas sin pisarse y bloqueos por lluvia o torneo, para que nadie tome un turno que no existe.</p>
+      </div>
+      <div class="rubro">
+        <div class="rubro-icon"><i class="bi bi-circle"></i></div>
+        <h3>Tenis, básquet, vóley y hockey</h3>
+        <p>Turnos de 60 o 90 minutos según la cancha, cada una con su tarifa y su lugar en la agenda.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -259,7 +322,7 @@
       <div class="plan-card featured">
         <div class="plan-featured-tag">Todo incluido</div>
         <div class="plan-name">LibraClub</div>
-        <div class="plan-price" style="font-size:1.4rem">Consultar</div>
+        <div class="plan-price">Consultar</div>
         <p class="plan-desc">Según la cantidad de canchas y sucursales de tu complejo.</p>
         <ul class="plan-features">
           <li><i class="bi bi-check-circle-fill icon-check"></i> Agenda semanal de todas tus canchas</li>
@@ -286,6 +349,43 @@
   </div>
 </section>
 
+<!-- ── Preguntas frecuentes ───────────────────────────────── -->
+<section id="preguntas" class="faq">
+  <div class="container faq-container">
+    <div class="section-label">Preguntas frecuentes</div>
+    <h2 class="section-title">Lo que más nos preguntan</h2>
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Qué pasa si dos personas quieren reservar el mismo turno?</summary>
+        <p>Entra una sola. La regla vive en la base de datos, no en una comprobación previa: si dos confirman a la vez, una reserva se toma y la otra no.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto cuesta?</summary>
+        <p>Hay un solo plan, con todo adentro. El precio depende de la cantidad de canchas y sucursales de tu complejo: escribinos por WhatsApp y te lo pasamos.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Puedo cargar el grupo que juega todos los martes?</summary>
+        <p>Sí, con las canchas fijas: el grupo de todos los martes a las 21 se carga una vez. Si una fecha está ocupada por un torneo, esa semana se saltea y el resto se crea igual.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Sirve si tengo más de una sede?</summary>
+        <p>Sí. Podés tener varias sedes en una misma cuenta, cada una con sus canchas, sus tarifas, su agenda y su propio punto de venta.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué pasa con los datos de mi complejo?</summary>
+        <p>Cada complejo tiene su propia instancia y su base de datos aislada, así que tus clientes y tu agenda no comparten tabla con nadie. Desde Configuración te bajás una copia completa de tu base y la podés reponer.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Emite facturas electrónicas?</summary>
+        <p>Todavía no. La factura electrónica de ARCA está en camino: las credenciales ya se cargan y cada sede tiene su punto de venta, pero falta el comprobante.</p>
+      </details>
+    </div>
+    <p class="faq-more">¿Te quedó otra duda? <a href="https://wa.me/5491127752983?text=Hola,%20tengo%20una%20consulta%20sobre%20LibraClub" target="_blank" rel="noopener">Escribinos por WhatsApp</a>.</p>
+  </div>
+</section>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué pasa si dos personas quieren reservar el mismo turno?", "acceptedAnswer": {"@type": "Answer", "text": "Entra una sola. La regla vive en la base de datos, no en una comprobación previa: si dos confirman a la vez, una reserva se toma y la otra no."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "Hay un solo plan, con todo adentro. El precio depende de la cantidad de canchas y sucursales de tu complejo: escribinos por WhatsApp y te lo pasamos."}}, {"@type": "Question", "name": "¿Puedo cargar el grupo que juega todos los martes?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, con las canchas fijas: el grupo de todos los martes a las 21 se carga una vez. Si una fecha está ocupada por un torneo, esa semana se saltea y el resto se crea igual."}}, {"@type": "Question", "name": "¿Sirve si tengo más de una sede?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Podés tener varias sedes en una misma cuenta, cada una con sus canchas, sus tarifas, su agenda y su propio punto de venta."}}, {"@type": "Question", "name": "¿Qué pasa con los datos de mi complejo?", "acceptedAnswer": {"@type": "Answer", "text": "Cada complejo tiene su propia instancia y su base de datos aislada, así que tus clientes y tu agenda no comparten tabla con nadie. Desde Configuración te bajás una copia completa de tu base y la podés reponer."}}, {"@type": "Question", "name": "¿Emite facturas electrónicas?", "acceptedAnswer": {"@type": "Answer", "text": "Todavía no. La factura electrónica de ARCA está en camino: las credenciales ya se cargan y cada sede tiene su punto de venta, pero falta el comprobante."}}]}</script>
+
 <!-- ── CTA final ──────────────────────────────────────────── -->
 <section class="cta-section">
   <h2>¿Cuántas reservas se te pierden por WhatsApp?</h2>
@@ -297,45 +397,46 @@
 </section>
 
 <!-- ── Footer ─────────────────────────────────────────────── -->
-<footer>
-  <div class="footer-inner">
-    <div>
+<footer class="site-footer">
+  <div class="f-inner">
+    <div class="f-about">
       <div class="footer-brand">
-        <img src="/img/marca.svg" alt="" class="logo-icon" width="28" height="28">
+        <img src="/img/marca.svg" alt="" class="logo-icon f-logo" width="28" height="28">
         LibraClub
       </div>
-      <div class="footer-tagline">Reservas y agenda para complejos deportivos</div>
+      <p class="f-tagline">Reservas y agenda para complejos deportivos: canchas, tarifas, canchas fijas y caja por turno.</p>
+      <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraClub" target="_blank" rel="noopener" class="f-cta">
+        <i class="bi bi-whatsapp"></i> Escribinos por WhatsApp
+      </a>
     </div>
-    <div style="display:flex;gap:3rem;flex-wrap:wrap">
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Sistema</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="#funciones" style="color:#94a3b8;font-size:.9rem">Funciones</a>
-          <a href="#planes" style="color:#94a3b8;font-size:.9rem">Planes</a>
-          <a href="/docs/" style="color:#94a3b8;font-size:.9rem">Documentación</a>
-          <!-- demo-publica --><a href="https://demo.libraclub.com.ar/" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Ver la demo</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Contacto</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="https://wa.me/5491127752983" target="_blank" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-whatsapp me-1"></i>WhatsApp</a>
-          <a href="mailto:soporte@libraclub.com.ar" style="color:#94a3b8;font-size:.9rem"><i class="bi bi-envelope me-1"></i>Email</a>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#475569;margin-bottom:.75rem">Familia Libra</div>
-        <div style="display:flex;flex-direction:column;gap:.4rem">
-          <a href="https://gestiolibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Gestiolibra — Turnos para servicios</a>
-          <a href="https://contalibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Contalibra — ERP &amp; Facturación</a>
-          <a href="https://restolibra.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">Restolibra — Gestión gastronómica</a>
-          <a href="https://libracargo.com.ar" target="_blank" rel="noopener" style="color:#94a3b8;font-size:.9rem">LibraCargo — Agencias de cargas</a>
-        </div>
-      </div>
-    </div>
+    <nav class="f-col" aria-label="Sistema">
+      <div class="f-title">Sistema</div>
+      <a href="#funciones">Funciones</a>
+      <a href="#planes">Planes</a>
+      <a href="#preguntas">Preguntas frecuentes</a>
+      <a href="/docs/">Documentación</a>
+      <!-- demo-publica --><a href="https://demo.libraclub.com.ar/" target="_blank" rel="noopener">Ver la demo</a>
+    </nav>
+    <nav class="f-col" aria-label="Contacto">
+      <div class="f-title">Contacto</div>
+      <a href="https://wa.me/5491127752983" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i>WhatsApp</a>
+      <a href="mailto:soporte@libraclub.com.ar"><i class="bi bi-envelope"></i>soporte@libraclub.com.ar</a>
+    </nav>
+    <nav class="f-col f-family" aria-label="LibraSuite">
+      <div class="f-title">LibraSuite</div>
+      <a href="https://librasuite.com.ar" target="_blank" rel="noopener">LibraSuite<small>Todos los sistemas de la suite</small></a>
+      <a href="https://ventalibra.com.ar" target="_blank" rel="noopener">VentaLibra<small>Punto de venta para retail</small></a>
+      <a href="https://contalibra.com.ar" target="_blank" rel="noopener">Contalibra<small>ERP y facturación</small></a>
+      <a href="https://restolibra.com.ar" target="_blank" rel="noopener">Restolibra<small>Gestión gastronómica</small></a>
+      <a href="https://gestiolibra.com.ar" target="_blank" rel="noopener">Gestiolibra<small>Turnos para servicios</small></a>
+      <a href="https://medlibra.com.ar" target="_blank" rel="noopener">MedLibra<small>Turnos para salud</small></a>
+      <a href="https://libradesk.com.ar" target="_blank" rel="noopener">LibraDesk<small>Mesa de ayuda y service IT</small></a>
+      <a href="https://libracargo.com.ar" target="_blank" rel="noopener">LibraCargo<small>Agencias de cargas</small></a>
+    </nav>
   </div>
-  <div class="footer-copy">
-    © 2026 LibraClub · parte de la familia Libra · Todos los derechos reservados
+  <div class="f-bottom">
+    <span>© 2026 LibraClub · parte de <a href="https://librasuite.com.ar" target="_blank" rel="noopener">LibraSuite</a> · Todos los derechos reservados</span>
+    <a href="/legal/terminos.html">Términos y condiciones</a>
   </div>
 </footer>
 
