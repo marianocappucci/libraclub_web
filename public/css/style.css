@@ -78,7 +78,7 @@ img { max-width: 100%; }
 .hero {
   background:
     linear-gradient(to bottom, rgba(2,25,17,.86) 0%, rgba(2,25,17,.68) 55%, rgba(2,25,17,.90) 100%),
-    url('/img/canchas-hero.jpg') center 45% / cover no-repeat,
+    url('/img/canchas-hero.jpg') 90% 45% / cover no-repeat,
     #04231a;
   color: white;
   padding: 6rem 2rem 5rem;
