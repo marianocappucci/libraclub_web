@@ -28,9 +28,9 @@ cd ~/proyectos/libra-web-kit
 
 La landing describe sólo lo construido —agenda, canchas, tarifas, reservas,
 canchas fijas, bloqueos, clientes, sucursales, portal público de reservas,
-torneos y americanos, factura electrónica y buffet— y tiene una sección
-**"En camino"** explícita para lo que **no existe todavía** (hoy, el panel del
-dueño). Cuando algo se construye, sale de ahí y pasa a `#funciones`.
+torneos y americanos, factura electrónica, buffet y panel del dueño—. Cuando
+hay algo que **no existe todavía**, va en una sección «En camino» explícita
+(hoy no hay ninguna); al construirse, sale de ahí y pasa a `#funciones`.
 
 También publica `public/robots.txt` y `public/sitemap.xml` (la página principal
 y los términos; `/docs/` está gateado y fuera del sitemap).
