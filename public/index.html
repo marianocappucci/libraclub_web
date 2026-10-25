@@ -3,13 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LibraClub — Reservas y agenda para tu complejo deportivo</title>
-  <meta name="description" content="Canchas, tarifas por franja, agenda semanal, reservas, canchas fijas y bloqueos. Para complejos de pádel, fútbol, tenis y cualquier espacio que se alquile por hora.">
+  <title>LibraClub — Reservas online, torneos y agenda para tu complejo</title>
+  <meta name="description" content="Agenda de canchas, reservas online con seña por Mercado Pago, torneos y americanos de pádel, tarifas por franja, factura electrónica y buffet.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
   <link rel="stylesheet" href="/css/style.css">
+  <style>
+    /* Lo mínimo para las capturas nuevas (style.css lo genera libra-web-kit) */
+    .showcase-grid.una { grid-template-columns: 1fr; max-width: 980px; margin-left: auto; margin-right: auto; }
+    .portal { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, 300px); gap: 4rem; align-items: center; }
+    .portal .section-sub { max-width: none; }
+    .portal .step-list { margin: 1.5rem 0 0; }
+    .celular { margin: 0; }
+    .celular-marco { width: 100%; max-width: 300px; margin: 0 auto; aspect-ratio: 780 / 1060; overflow: hidden;
+                     border: 8px solid var(--dark); border-radius: 32px; background: #fff; box-shadow: var(--shadow); }
+    .celular-marco img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top; }
+    .celular figcaption { margin-top: 1.1rem; text-align: center; font-size: .92rem; color: var(--muted); }
+    .navbar-links a { white-space: nowrap; }
+    @media (max-width: 1180px) { .navbar-links { gap: 1rem; } .navbar-links a[href="#reservas-online"] { display: none; } }
+    @media (max-width: 960px) { .navbar-links a[href="#torneos"], .navbar-links a[href="#escritorio"] { display: none; } }
+    .showcase-fig .browser-body a { display: block; cursor: zoom-in; }
+    @media (max-width: 768px) { .portal { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; } }
+  </style>
 </head>
 <body>
 
@@ -21,6 +38,8 @@
   </a>
   <div class="navbar-links">
     <a href="#funciones">Funciones</a>
+    <a href="#torneos">Torneos</a>
+    <a href="#reservas-online">Reservas</a>
     <a href="#planes">Planes</a>
     <a href="#escritorio">Web y escritorio</a>
     <a href="#preguntas">Preguntas</a>
@@ -159,6 +178,38 @@
       </div>
 
       <div class="feature-card">
+        <div class="feature-icon" style="background:#d1fae5">
+          <i class="bi bi-phone" style="color:#015c38"></i>
+        </div>
+        <h3>Portal público de reservas <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Tus clientes reservan solos desde el celular: ven las canchas y los turnos libres con su precio, y el turno queda retenido mientras pagan la seña por Mercado Pago. Al acreditarse el pago, la reserva queda confirmada sola. <a href="#reservas-online">Ver cómo funciona</a>.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#d1fae5">
+          <i class="bi bi-trophy" style="color:#015c38"></i>
+        </div>
+        <h3>Torneos y americanos <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Eliminación directa, liga y zonas con llaves, y americanos de pádel con la grilla por zona lista para imprimir. Cada partido tiene su cancha y su horario, y bloquea la agenda. <a href="#torneos">Ver los torneos</a>.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#d1fae5">
+          <i class="bi bi-receipt" style="color:#015c38"></i>
+        </div>
+        <h3>Factura electrónica <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Emite la factura de ARCA con su CAE, con el punto de venta de cada sede.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#d1fae5">
+          <i class="bi bi-cup-straw" style="color:#015c38"></i>
+        </div>
+        <h3>Buffet <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Catálogo, stock y venta del buffet, con el consumo asociado a la reserva.</p>
+      </div>
+
+      <div class="feature-card">
         <div class="feature-icon" style="background:#f8fafc">
           <i class="bi bi-database-lock" style="color:#475569"></i>
         </div>
@@ -270,34 +321,100 @@
   </div>
 </section>
 
+<!-- ── Torneos ────────────────────────────────────────────── -->
+<section class="showcase" id="torneos">
+  <div class="container">
+    <div class="section-label">Torneos y americanos</div>
+    <h2 class="section-title">Los torneos del complejo, sin planillas</h2>
+    <p class="section-sub">Armá el torneo, hacé el sorteo y cargá los resultados: el cuadro y la tabla se arman solos. Cada partido tiene su cancha y su horario, y ocupa la cancha en la agenda. Capturas reales de la demo, con datos de prueba.</p>
+    <div class="showcase-grid una">
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.libraclub.com.ar/torneos</div>
+          </div>
+          <div class="browser-body">
+            <a href="/img/demo-torneo-llaves.jpg" target="_blank" rel="noopener"><img src="/img/demo-torneo-llaves.jpg" width="1737" height="840" loading="lazy"
+                 alt="Cuadro de eliminación directa de un torneo de pádel en LibraClub: cuartos de final, semifinal y final, con el resultado de cada partido"></a>
+          </div>
+        </div>
+        <figcaption>Eliminación directa: cuartos, semifinal y final, con los resultados de cada partido.</figcaption>
+      </figure>
+      <figure class="showcase-fig">
+        <div class="browser">
+          <div class="browser-bar">
+            <span></span><span></span><span></span>
+            <div class="browser-url">demo.libraclub.com.ar/torneos</div>
+          </div>
+          <div class="browser-body">
+            <a href="/img/demo-torneo-americano.jpg" target="_blank" rel="noopener"><img src="/img/demo-torneo-americano.jpg" width="1737" height="668" loading="lazy"
+                 alt="Grilla de una zona de un americano de pádel, categoría Caballeros 5ta: parejas en filas y columnas, resultado de cada cruce y las columnas de partidos ganados, sets, games y posición"></a>
+          </div>
+        </div>
+        <figcaption>Americano de pádel: la grilla de una zona, como la de papel, lista para imprimir una hoja por zona.</figcaption>
+      </figure>
+    </div>
+    <div class="features-grid" style="margin-top:3rem">
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#d1fae5">
+          <i class="bi bi-diagram-3" style="color:#015c38"></i>
+        </div>
+        <h3>Torneos y ligas <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Fútbol, pádel, tenis y otros. Eliminación directa con cabezas de serie, liga de todos contra todos o zonas con llaves. Sorteo, fixture, resultados y tabla de posiciones.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#d1fae5">
+          <i class="bi bi-grid-3x3" style="color:#015c38"></i>
+        </div>
+        <h3>Americanos de pádel <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Parejas fijas en zonas, todos contra todos. Elegís el partido —un set a 6, un set a 9 o al mejor de 3— y, al terminar las zonas, si hay llaves o si termina ahí con un campeón por zona. El desempate lo resuelve el sistema.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:#d1fae5">
+          <i class="bi bi-collection" style="color:#015c38"></i>
+        </div>
+        <h3>Categorías y eventos <span class="feature-badge badge-incluido">Incluido</span></h3>
+        <p>Caballeros, Damas, Mixto, 4ta, 5ta… Un torneo suelto con su categoría, o un evento que reúne varias categorías con las mismas fechas y canchas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Portal de reservas ─────────────────────────────────── -->
+<section id="reservas-online">
+  <div class="container portal">
+    <div>
+      <div class="section-label">Reservas online · Incluido en el plan</div>
+      <h2 class="section-title">Tus clientes reservan solos, desde el celular</h2>
+      <p class="section-sub">Cada complejo tiene su página pública para reservar, sin activar nada: es la dirección de tu complejo terminada en <strong>/reservar</strong>. Los turnos que se toman ahí aparecen en tu agenda, marcados como reservas del portal.</p>
+      <ol class="step-list">
+        <li><strong>Se registra</strong> con su correo y una contraseña.</li>
+        <li><strong>Elige</strong> la cancha, el día y un turno libre, con el precio a la vista.</li>
+        <li><strong>Paga la seña</strong> por Mercado Pago. Mientras paga, el turno queda retenido y nadie más lo puede tomar.</li>
+        <li><strong>Queda confirmada sola</strong> apenas se acredita el pago. Después puede ver o cancelar sus reservas, o publicar un partido para que otros se sumen.</li>
+      </ol>
+      <div class="callout">
+        <p><strong>Qué tenés que hacer vos:</strong> cargar las credenciales de Mercado Pago de tu complejo. El porcentaje de seña sale de tus tarifas. Sin las credenciales, el portal avisa que el complejo no tiene Mercado Pago configurado.</p>
+      </div>
+    </div>
+    <figure class="celular">
+      <div class="celular-marco">
+        <img src="/img/demo-portal-reservar.jpg" width="780" height="1688" loading="lazy"
+             alt="Portal público para reservar cancha, visto en un celular: las canchas disponibles, los días de la semana y los turnos libres con su precio">
+      </div>
+      <figcaption>El portal en el celular del jugador: canchas, días y turnos con precio.</figcaption>
+    </figure>
+  </div>
+</section>
+
 <!-- ── En camino ──────────────────────────────────────────── -->
 <section class="alt">
   <div class="container">
     <div class="section-label">En camino</div>
     <h2 class="section-title">Lo que todavía no está</h2>
-    <p class="section-sub">Preferimos decirlo acá y no que lo descubras adentro. Nada de esto está disponible hoy.</p>
-    <div class="features-grid" style="margin-top:2rem">
-      <div class="feature-card" style="opacity:.72">
-        <div class="feature-icon" style="background:#f1f5f9">
-          <i class="bi bi-phone" style="color:#64748b"></i>
-        </div>
-        <h3>Portal público de reservas</h3>
-        <p>Que tus clientes reserven solos desde el celular, con seña por Mercado Pago y el turno retenido mientras pagan.</p>
-      </div>
-      <div class="feature-card" style="opacity:.72">
-        <div class="feature-icon" style="background:#f1f5f9">
-          <i class="bi bi-receipt" style="color:#64748b"></i>
-        </div>
-        <h3>Factura electrónica</h3>
-        <p>Emitir la factura de ARCA con el punto de venta de cada sede. Las credenciales ya se cargan; falta el comprobante.</p>
-      </div>
-      <div class="feature-card" style="opacity:.72">
-        <div class="feature-icon" style="background:#f1f5f9">
-          <i class="bi bi-cup-straw" style="color:#64748b"></i>
-        </div>
-        <h3>Buffet</h3>
-        <p>Catálogo, stock y punto de venta del buffet, con el consumo asociado a la reserva.</p>
-      </div>
+    <p class="section-sub">Preferimos decirlo acá y no que lo descubras adentro. Esto todavía no está disponible.</p>
+    <div class="features-grid" style="margin-top:2rem;max-width:420px;margin-left:auto;margin-right:auto">
       <div class="feature-card" style="opacity:.72">
         <div class="feature-icon" style="background:#f1f5f9">
           <i class="bi bi-graph-up" style="color:#64748b"></i>
@@ -335,6 +452,10 @@
           <li><i class="bi bi-check-circle-fill icon-check"></i> Varias sucursales</li>
           <li><i class="bi bi-check-circle-fill icon-check"></i> Caja por turno, con arqueo al cerrar</li>
           <li><i class="bi bi-check-circle-fill icon-check"></i> Cuenta corriente, para el que paga a fin de mes</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Portal de reservas online, con seña por Mercado Pago</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Torneos y americanos, con llaves y grillas</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Factura electrónica de ARCA</li>
+          <li><i class="bi bi-check-circle-fill icon-check"></i> Buffet con stock y consumo por reserva</li>
           <li><i class="bi bi-check-circle-fill icon-check"></i> Usuarios ilimitados</li>
           <li><i class="bi bi-check-circle-fill icon-check"></i> Log de actividad y accesos</li>
           <li><i class="bi bi-check-circle-fill icon-check"></i> Base de datos propia, con backup descargable</li>
@@ -345,7 +466,7 @@
     </div>
 
     <p style="text-align:center;color:var(--muted);margin-top:1.5rem;font-size:.8rem;max-width:700px;margin-left:auto;margin-right:auto;line-height:1.6">
-      Escribinos y te pasamos el precio. Cuando el portal público y la caja estén listos, quien ya sea cliente los va a tener antes que nadie.
+      Escribinos y te pasamos el precio.
     </p>
   </div>
 </section>
@@ -392,6 +513,14 @@
         <p>Entra una sola. La regla vive en la base de datos, no en una comprobación previa: si dos confirman a la vez, una reserva se toma y la otra no.</p>
       </details>
       <details class="faq-item">
+        <summary>¿Mis clientes pueden reservar solos desde el celular?</summary>
+        <p>Sí. Cada complejo tiene su portal público de reservas, sin activar nada: es la dirección de tu complejo terminada en /reservar. El jugador se registra con su correo, ve las canchas y los turnos libres con su precio, y reserva. El turno queda retenido mientras paga la seña por Mercado Pago y, al acreditarse el pago, la reserva queda confirmada sola. Para que funcione, tu complejo tiene que cargar sus credenciales de Mercado Pago.</p>
+      </details>
+      <details class="faq-item">
+        <summary>¿Sirve para organizar torneos y americanos?</summary>
+        <p>Sí. Podés armar torneos de fútbol, pádel, tenis y otros deportes: eliminación directa con cabezas de serie, liga de todos contra todos o zonas con llaves. Para el pádel hay americanos, con la grilla de cada zona lista para imprimir. Cada partido tiene su cancha y su horario, y ocupa la cancha en la agenda. Los torneos se pueden separar por categorías (Caballeros, Damas, Mixto, 4ta, 5ta…).</p>
+      </details>
+      <details class="faq-item">
         <summary>¿Cuánto cuesta?</summary>
         <p>Hay un solo plan, con todo adentro. El precio depende de la cantidad de canchas y sucursales de tu complejo: escribinos por WhatsApp y te lo pasamos.</p>
       </details>
@@ -409,14 +538,14 @@
       </details>
       <details class="faq-item">
         <summary>¿Emite facturas electrónicas?</summary>
-        <p>Todavía no. La factura electrónica de ARCA está en camino: las credenciales ya se cargan y cada sede tiene su punto de venta, pero falta el comprobante.</p>
+        <p>Sí. LibraClub emite la factura electrónica de ARCA, con su CAE, y cada sede usa su propio punto de venta. Antes de emitir, tu complejo carga sus credenciales de ARCA en Configuración.</p>
       </details>
     </div>
     <p class="faq-more">¿Te quedó otra duda? <a href="https://wa.me/5491127752983?text=Hola,%20tengo%20una%20consulta%20sobre%20LibraClub" target="_blank" rel="noopener">Escribinos por WhatsApp</a>.</p>
   </div>
 </section>
 
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué pasa si se corta internet?", "acceptedAnswer": {"@type": "Answer", "text": "Con la versión de escritorio, LibraClub sigue funcionando: se instala en la PC de tu negocio, trabaja aunque no haya conexión y, cuando vuelve, sincroniza todo solo con la versión web, sin duplicar ni perder nada. Está incluida en todos los planes."}}, {"@type": "Question", "name": "¿Qué pasa si dos personas quieren reservar el mismo turno?", "acceptedAnswer": {"@type": "Answer", "text": "Entra una sola. La regla vive en la base de datos, no en una comprobación previa: si dos confirman a la vez, una reserva se toma y la otra no."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "Hay un solo plan, con todo adentro. El precio depende de la cantidad de canchas y sucursales de tu complejo: escribinos por WhatsApp y te lo pasamos."}}, {"@type": "Question", "name": "¿Puedo cargar el grupo que juega todos los martes?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, con las canchas fijas: el grupo de todos los martes a las 21 se carga una vez. Si una fecha está ocupada por un torneo, esa semana se saltea y el resto se crea igual."}}, {"@type": "Question", "name": "¿Sirve si tengo más de una sede?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Podés tener varias sedes en una misma cuenta, cada una con sus canchas, sus tarifas, su agenda y su propio punto de venta."}}, {"@type": "Question", "name": "¿Qué pasa con los datos de mi complejo?", "acceptedAnswer": {"@type": "Answer", "text": "Cada complejo tiene su propia instancia y su base de datos aislada, así que tus clientes y tu agenda no comparten tabla con nadie. Desde Configuración te bajás una copia completa de tu base y la podés reponer."}}, {"@type": "Question", "name": "¿Emite facturas electrónicas?", "acceptedAnswer": {"@type": "Answer", "text": "Todavía no. La factura electrónica de ARCA está en camino: las credenciales ya se cargan y cada sede tiene su punto de venta, pero falta el comprobante."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué pasa si se corta internet?", "acceptedAnswer": {"@type": "Answer", "text": "Con la versión de escritorio, LibraClub sigue funcionando: se instala en la PC de tu negocio, trabaja aunque no haya conexión y, cuando vuelve, sincroniza todo solo con la versión web, sin duplicar ni perder nada. Está incluida en todos los planes."}}, {"@type": "Question", "name": "¿Qué pasa si dos personas quieren reservar el mismo turno?", "acceptedAnswer": {"@type": "Answer", "text": "Entra una sola. La regla vive en la base de datos, no en una comprobación previa: si dos confirman a la vez, una reserva se toma y la otra no."}}, {"@type": "Question", "name": "¿Mis clientes pueden reservar solos desde el celular?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Cada complejo tiene su portal público de reservas, sin activar nada: es la dirección de tu complejo terminada en /reservar. El jugador se registra con su correo, ve las canchas y los turnos libres con su precio, y reserva. El turno queda retenido mientras paga la seña por Mercado Pago y, al acreditarse el pago, la reserva queda confirmada sola. Para que funcione, tu complejo tiene que cargar sus credenciales de Mercado Pago."}}, {"@type": "Question", "name": "¿Sirve para organizar torneos y americanos?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Podés armar torneos de fútbol, pádel, tenis y otros deportes: eliminación directa con cabezas de serie, liga de todos contra todos o zonas con llaves. Para el pádel hay americanos, con la grilla de cada zona lista para imprimir. Cada partido tiene su cancha y su horario, y ocupa la cancha en la agenda. Los torneos se pueden separar por categorías (Caballeros, Damas, Mixto, 4ta, 5ta…)."}}, {"@type": "Question", "name": "¿Cuánto cuesta?", "acceptedAnswer": {"@type": "Answer", "text": "Hay un solo plan, con todo adentro. El precio depende de la cantidad de canchas y sucursales de tu complejo: escribinos por WhatsApp y te lo pasamos."}}, {"@type": "Question", "name": "¿Puedo cargar el grupo que juega todos los martes?", "acceptedAnswer": {"@type": "Answer", "text": "Sí, con las canchas fijas: el grupo de todos los martes a las 21 se carga una vez. Si una fecha está ocupada por un torneo, esa semana se saltea y el resto se crea igual."}}, {"@type": "Question", "name": "¿Sirve si tengo más de una sede?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Podés tener varias sedes en una misma cuenta, cada una con sus canchas, sus tarifas, su agenda y su propio punto de venta."}}, {"@type": "Question", "name": "¿Qué pasa con los datos de mi complejo?", "acceptedAnswer": {"@type": "Answer", "text": "Cada complejo tiene su propia instancia y su base de datos aislada, así que tus clientes y tu agenda no comparten tabla con nadie. Desde Configuración te bajás una copia completa de tu base y la podés reponer."}}, {"@type": "Question", "name": "¿Emite facturas electrónicas?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. LibraClub emite la factura electrónica de ARCA, con su CAE, y cada sede usa su propio punto de venta. Antes de emitir, tu complejo carga sus credenciales de ARCA en Configuración."}}]}</script>
 
 <!-- ── CTA final ──────────────────────────────────────────── -->
 <section class="cta-section">
@@ -436,7 +565,7 @@
         <img src="/img/marca.svg" alt="" class="logo-icon f-logo" width="28" height="28">
         LibraClub
       </div>
-      <p class="f-tagline">Reservas y agenda para complejos deportivos: canchas, tarifas, canchas fijas y caja por turno.</p>
+      <p class="f-tagline">Reservas online y agenda para complejos deportivos: canchas, tarifas, torneos y caja por turno.</p>
       <a href="https://wa.me/5491127752983?text=Hola,%20quiero%20info%20sobre%20LibraClub" target="_blank" rel="noopener" class="f-cta">
         <i class="bi bi-whatsapp"></i> Escribinos por WhatsApp
       </a>
@@ -444,6 +573,8 @@
     <nav class="f-col" aria-label="Sistema">
       <div class="f-title">Sistema</div>
       <a href="#funciones">Funciones</a>
+      <a href="#torneos">Torneos</a>
+      <a href="#reservas-online">Reservas online</a>
       <a href="#planes">Planes</a>
       <a href="#escritorio">Web y escritorio</a>
       <a href="#preguntas">Preguntas frecuentes</a>

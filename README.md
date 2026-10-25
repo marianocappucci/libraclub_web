@@ -26,10 +26,14 @@ cd ~/proyectos/libra-web-kit
 
 ## Qué promete esta landing, y qué no
 
-LibraClub está en **F1**. La landing describe sólo lo construido —agenda,
-canchas, tarifas, reservas, canchas fijas, bloqueos, clientes, sucursales— y
-tiene una sección **"En camino"** explícita para el portal público, la caja y
-factura, el buffet y el panel del dueño, que **no existen todavía**.
+La landing describe sólo lo construido —agenda, canchas, tarifas, reservas,
+canchas fijas, bloqueos, clientes, sucursales, portal público de reservas,
+torneos y americanos, factura electrónica y buffet— y tiene una sección
+**"En camino"** explícita para lo que **no existe todavía** (hoy, el panel del
+dueño). Cuando algo se construye, sale de ahí y pasa a `#funciones`.
+
+También publica `public/robots.txt` y `public/sitemap.xml` (la página principal
+y los términos; `/docs/` está gateado y fuera del sitemap).
 
 🔴 **Y por eso los planes son uno solo.** `plans.py` de LibraClub declara tres
 —básico, estándar, premium— pero los tres habilitan exactamente lo mismo,
