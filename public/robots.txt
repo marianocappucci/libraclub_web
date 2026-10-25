@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /docs/
+Disallow: /login-docs
+Disallow: /logout-docs
+
+Sitemap: https://libraclub.com.ar/sitemap.xml
